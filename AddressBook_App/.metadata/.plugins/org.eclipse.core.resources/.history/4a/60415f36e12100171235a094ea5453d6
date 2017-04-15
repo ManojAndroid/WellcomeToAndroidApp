@@ -1,0 +1,14 @@
+package org.bridgelabz.addressbookApp.Model;
+
+public class Person {
+	private String firstName;
+	private String lastNmae;
+	private String address;
+	private String city;
+	private String state;
+	private int zipcode;
+	private String phoneNumber;
+
+
+
+}

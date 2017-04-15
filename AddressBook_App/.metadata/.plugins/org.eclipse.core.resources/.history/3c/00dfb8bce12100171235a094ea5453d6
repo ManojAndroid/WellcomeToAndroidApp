@@ -1,0 +1,34 @@
+package org.bridgelabz.addressbookApp.Controller;
+import org.bridgelabz.addressbookApp.Service.AddressBook;
+import java.util.Scanner;
+public class AddressBookControler {
+		Scanner sc = new Scanner(System.in);
+		AddressBook addressBook = new AddressBook();
+
+		public void addPerson() {
+
+			addressBook.addPerson();
+		}
+
+		public void createNewAddressBook() {
+			}
+
+		public void sortByName() {
+
+		}
+
+		public void sortByZip() {
+		}
+
+		public void delete() {
+
+			addressBook.deleteByFirstName();
+		}
+		public void Edit() {
+
+			addressBook.editDetails();
+		}
+
+	}
+
+

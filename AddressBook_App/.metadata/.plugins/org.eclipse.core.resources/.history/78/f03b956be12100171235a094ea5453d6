@@ -1,0 +1,105 @@
+package org.bridgelabz.addressbookApp.Controller;
+import org.bridgelabz.addressbookApp.Service.AddressBook;
+import java.util.Scanner;
+public class AddressBookControler {
+		Scanner sc = new Scanner(System.in);
+		AddressBook ab = new AddressBook();
+
+		public void addPerson() {
+
+					ab.addPerson();
+		}
+
+	/*	public void createNewAddressBook() {
+			int i = 0;
+			AddressBook a = new AddressBook();
+			a.createNewAddressBook();
+			System.out.println("Do you Want to Add More ?");
+			System.out.println("1 yes\n2 no");
+			int s = sc.nextInt();
+			while (i < 10) {
+				if (s == 1) {
+					a.createNewAddressBook();
+					i++;
+				} else if (s == 2) {
+					System.out.println("You exited thankyou");
+					break;
+				}
+			}
+		}*/	public String getFirstName() {
+			return firstName;
+		}
+
+		public void setFirstName(String firstName) {
+			this.firstName = firstName;
+		}
+
+		public String getLastNmae() {
+			return lastNmae;
+		}
+
+		public void setLastNmae(String lastNmae) {
+			this.lastNmae = lastNmae;
+		}
+
+		public String getAddress() {
+			return address;
+		}
+
+		public void setAddress(String address) {
+			this.address = address;
+		}
+
+		public String getCity() {
+			return city;
+		}
+
+		public void setCity(String city) {
+			this.city = city;
+		}
+
+		public String getState() {
+			return state;
+		}
+
+		public void setState(String state) {
+			this.state = state;
+		}
+
+		public int getZipcode() {
+			return zipcode;
+		}
+
+		public void setZipcode(int zipcode) {
+			this.zipcode = zipcode;
+		}
+
+		public String getPhoneNumber() {
+			return phoneNumber;
+		}
+
+		public void setPhoneNumber(String phoneNumber) {
+			this.phoneNumber = phoneNumber;
+		}
+
+		public void sortByName() {
+			AddressBook a = new AddressBook();
+
+		}
+
+		public void sortByZip() {
+			AddressBook a = new AddressBook();
+		}
+
+		public void delete() {
+
+			ab.deleteByFirstName();
+		}
+		public void Edit() {
+
+			ab.editDetails();
+		}
+
+	}
+
+
