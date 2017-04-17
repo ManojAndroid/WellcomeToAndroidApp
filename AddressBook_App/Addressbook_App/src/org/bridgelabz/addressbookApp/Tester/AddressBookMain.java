@@ -7,7 +7,6 @@ public class AddressBookMain {
 
 	public static void main(String[] args) {
 		AddressBookController addressBookController = new AddressBookController();
-
 		Scanner scanner = new Scanner(System.in);
 		int option;
 
@@ -16,7 +15,7 @@ public class AddressBookMain {
 					"1 :create newAddressBoook  \n2 :addPerson \n3 :sortByName \n4 :sortbyzip\n5 :Delete\n6 :Edit");
 			option = scanner.nextInt();
 			switch (option) {
-			case 1:// a.createNewAddressBook();
+			case 1: addressBookController.createNewAddressBook();
 				break;
 			case 2:
 				addressBookController.addPerson();

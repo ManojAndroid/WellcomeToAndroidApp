@@ -13,6 +13,7 @@ public class AddressBookController {
 	}
 
 	public void createNewAddressBook() {
+		addressBook.createNewAddressBook();
 	}
 
 	public void sortByName() {

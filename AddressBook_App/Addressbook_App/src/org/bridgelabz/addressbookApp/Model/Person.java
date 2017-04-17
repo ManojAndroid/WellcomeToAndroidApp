@@ -69,7 +69,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "  " + firstName + "" + lastNmae + "" + address + "" + city + "" + state + "" + zipcode + ""
+		return "     " + firstName + "    \t     " + lastNmae + "      \t" + address + "\t     " + city + "  \t   " + state + "    \t   " + zipcode + "  \t     "
 				+ phoneNumber + "";
 	}
 

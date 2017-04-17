@@ -19,4 +19,9 @@
 		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
 		<item value="false" key="LINK_NAVIGATOR_TO_EDITOR"/>
 	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
 </section>
