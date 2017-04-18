@@ -1,0 +1,15 @@
+package org.bridgelab.Collection;
+
+import java.util.HashSet;
+
+public class HashsetTester {
+	public static void main(String[] args) 
+	{
+		HashSet hashSet=new HashSet();
+		hashSet.add(new TicketBooking("manoj","singh","mumbai","delhi"));
+		hashSet.add(new TicketBooking("uday","singh","mumbai","ranchi"));
+	
+	
+	}
+
+}

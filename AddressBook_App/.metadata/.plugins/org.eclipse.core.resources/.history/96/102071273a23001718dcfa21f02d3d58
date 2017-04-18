@@ -1,0 +1,22 @@
+package org.bridgelab.generalProgram;
+import java.util.Scanner;
+public class Frog {
+	public static void main(String[] args) {
+		
+	Scanner scanner=new Scanner(System.in);
+	
+	System.out.println(" Enter the height of wall");
+	int height=scanner.nextInt();
+	System.out.println("Enter the Frog One time jumping height");
+	int frogjump=scanner.nextInt();
+	int sum=0;
+	int count=0;
+	for (int i = 1; i < height; i++) 
+	{
+		sum=sum+frogjump-1;
+		count++;
+	}
+			System.out.println("frog willl jump"+count);
+	
+	}
+}

@@ -1,0 +1,5 @@
+package org.bridgelab.generalProgram.Collection;
+
+public class Book {
+
+}

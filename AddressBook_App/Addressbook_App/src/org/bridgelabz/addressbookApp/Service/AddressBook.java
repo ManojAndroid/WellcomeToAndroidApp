@@ -19,8 +19,6 @@ public class AddressBook implements AddressBookInterface {
 
 	Person person;
 	Scanner scanner = new Scanner(System.in);
-	//String value = "";
-	// LinkedList key=new LinkedList();
 	static String key = "";
 
 	public void addPerson() {
@@ -80,9 +78,6 @@ public class AddressBook implements AddressBookInterface {
 
 		display();
 		System.out.println("Sucessfully data addeded into "+key);
-		//for (Entry<String, LinkedList<Person>> entry : hashMap.entrySet()) {
-			//System.out.println("Sucessfully data addeded into :" + entry.getKey());
-		//}
 	}
 
 	public void createNewAddressBook() {
@@ -143,7 +138,6 @@ public class AddressBook implements AddressBookInterface {
 	}
 
 	public void display() {
-		System.out.println("<html><body bgcolor='red'><h1>mcmcmcm");
 		System.out.println("________________________________________________________________________________________________________________________");
 		System.out.println("     FirstName  \tLastNmae      \tAddress      \tCity      \tState           \tZipCode         \tPhoneNumber");
 		System.out.println("________________________________________________________________________________________________________________________");
