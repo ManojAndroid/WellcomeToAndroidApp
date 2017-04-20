@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function drawShape() {
+        var myCanvas = document.getElementById("myCanvas");
+        var ctx = myCanvas.getContext("2d");
+        ctx.fillRect(20, 20, 400, 400);
+        ctx.strokeRect(10,10,420,420);
+       /* ctx.clearRect(45,45,50,50); */
+}
+</script>
+</head>
+ <body onload="drawShape()">
+                <canvas id="myCanvas" width="300" height="300">clcllc
+                </canvas>
+        </body>
+
+</html>

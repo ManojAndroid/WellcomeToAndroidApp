@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function draw() {
+		var myCanvas = document.getElementById("myCanvas");
+		var ctx = myCanvas.getContext("2d");
+		ctx.fillRect(20, 20, 100, 100);
+		ctx.strokeRect(10, 10, 120, 120);
+		ctx.clearRect(45, 45, 50, 50);
+		ctx.fillStyle = "green";
+		ctx.closePath(); 
+		ctx.fill();
+	}
+	function drawShape() {
+		var myCanvas = document.getElementById("myCan");
+		var ctx = myCanvas.getContext("2d");
+		var grd=ctx.createLinearGradient(0,0,200,0);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+
+		// Fill with gradient
+		ctx.fillStyle=grd;
+		ctx.fillRect(10,10,150,80);
+	}
+	
+</script>
+</head>
+<body onload="draw()">
+	<canvas id="myCanvas" width="300" height="300">
+                </canvas>
+
+
+	<canvas id="myCan" width="200" height="100" onmouseleave="drawShape()" style="border:1px solid #d3d3d3;">
+                </canvas>
+	<!-- <canvas id="myCan" width="300" height="300" onclick="drawShape()">
+                </canvas> -->
+</body>
+
+</html>

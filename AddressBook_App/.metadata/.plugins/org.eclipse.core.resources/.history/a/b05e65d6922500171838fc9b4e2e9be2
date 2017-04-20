@@ -1,0 +1,23 @@
+package org.bridgelab.CollectionHashMap;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapTester {
+	public static void main(String[] args) {
+	Map hashMap = new HashMap();
+		hashMap.put(1, new TicketBooking(1, "manoj", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "ashok", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "manoj", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "ashok", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "manoj", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "ashok", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "manoj", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "ashok", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "manoj", "singh", "delhi", "ranchi"));
+		hashMap.put(1, new TicketBooking(1, "ashok", "singh", "delhi", "ranchi"));
+		System.out.println(hashMap);
+	}
+
+}

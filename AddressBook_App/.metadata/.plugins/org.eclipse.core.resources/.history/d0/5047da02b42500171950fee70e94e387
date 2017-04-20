@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+	function draw() {
+		var myCanvas = document.getElementById("myCanvas");
+		var ctx = myCanvas.getContext("2d");
+		ctx.fillRect(20, 20, 100, 100);
+		ctx.strokeRect(10, 10, 120, 120);
+		ctx.clearRect(45, 45, 50, 50);
+		ctx.fillStyle = "green";
+		ctx.closePath(); 
+		ctx.fill();
+	}
+	function drawShape() {
+		var myCanvas = document.getElementById("myCan");
+		var ctx = myCanvas.getContext("2d");
+		 //Begin our drawing
+        ctx.beginPath();
+        ctx.moveTo(75,0);
+        ctx.lineTo(150,100);
+        ctx.lineTo(75, 200);
+        ctx.lineTo(0,100);
+         
+        //Define the style of the shape
+        ctx.lineWidth = 1;
+        ctx.fillStyle = "cyan";
+        ctx.strokeStyle = "blue";
+        ctx.lineWidth="red" 
+        //Close the path
+        ctx.closePath();
+         
+        //Fill the path with ourline and color
+        ctx.fill();
+        ctx.stroke();
+	}
+</script>
+</head>
+<body onload="draw()">
+	<canvas id="myCanvas" width="300" height="300">clcllc
+                </canvas>
+
+
+	<canvas id="myCan" width="300" height="300" onmouseover="drawShape()">clcllc
+                </canvas>
+	<!-- <canvas id="myCan" width="300" height="300" onclick="drawShape()">clcllc
+                </canvas> -->
+</body>
+
+</html>
