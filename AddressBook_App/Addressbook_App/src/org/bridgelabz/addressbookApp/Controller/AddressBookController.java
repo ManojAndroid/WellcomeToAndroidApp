@@ -35,4 +35,9 @@ public class AddressBookController {
 		addressBook.editDetails();
 	}
 
+	public void display() {
+
+		addressBook.display();
+	}
+
 }

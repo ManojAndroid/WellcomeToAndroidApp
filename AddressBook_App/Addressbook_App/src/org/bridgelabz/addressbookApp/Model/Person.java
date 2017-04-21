@@ -1,8 +1,9 @@
 package org.bridgelabz.addressbookApp.Model;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
-public class Person {
+public class Person implements Serializable {
 	private String firstName;
 	private String lastNmae;
 	private String address;
@@ -69,8 +70,8 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "     " + firstName + "    \t     " + lastNmae + "      \t" + address + "\t     " + city + "  \t   " + state + "    \t   " + zipcode + "  \t     "
-				+ phoneNumber + "";
+		return "     " + firstName + "    \t     " + lastNmae + "      \t" + address + "\t     " + city + "  \t   "
+				+ state + "    \t   " + zipcode + "  \t     " + phoneNumber + "";
 	}
 
 	public static Comparator<Person> sortEntriesName = new Comparator<Person>() {

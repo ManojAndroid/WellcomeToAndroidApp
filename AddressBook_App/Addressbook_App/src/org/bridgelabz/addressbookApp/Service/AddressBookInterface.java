@@ -12,4 +12,6 @@ public interface AddressBookInterface {
 	void sortByName();
 
 	void editDetails();
+
+	void display();
 }

@@ -12,10 +12,11 @@ public class AddressBookMain {
 
 		do {
 			System.out.println(
-					"1 :create newAddressBoook  \n2 :addPerson \n3 :sortByName \n4 :sortbyzip\n5 :Delete\n6 :Edit");
+					"1 :create newAddressBoook  \n2 :addPerson \n3 :sortByName \n4 :sortbyzip\n5 :Delete\n6 :Edit \n7 :showdETAILS");
 			option = scanner.nextInt();
 			switch (option) {
-			case 1: addressBookController.createNewAddressBook();
+			case 1:
+				addressBookController.createNewAddressBook();
 				break;
 			case 2:
 				addressBookController.addPerson();
@@ -32,9 +33,12 @@ public class AddressBookMain {
 			case 6:
 				addressBookController.Edit();
 				break;
+			case 7:
+				addressBookController.display();
+				break;
 			default:
 			}
-		} while (option != 7);
+		} while (option != 8);
 	}
 
 }
