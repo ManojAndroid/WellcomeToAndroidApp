@@ -838,3 +838,16 @@ org.eclipse.debug.core.DebugException: Terminate failed
 	at java.lang.Thread.run(Thread.java:745)
 !SUBENTRY 1 org.eclipse.debug.core 4 5010 2017-04-21 19:59:07.307
 !MESSAGE Terminate failed
+!SESSION 2017-04-22 10:09:18.277 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-22 10:40:57.752
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-04-22 10:40:57.756
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

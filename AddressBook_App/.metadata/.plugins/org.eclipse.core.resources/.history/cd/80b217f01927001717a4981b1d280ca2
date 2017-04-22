@@ -138,7 +138,7 @@ public class AddressBook implements AddressBookInterface {
 		System.out.println(" Select Your Address Book");
 		int select = scanner.nextInt();
 		key = addressbook[select];
-		linkedList = hashMap.get(key);
+	
 
 		if (hashMap.containsKey(key)) {
 			LinkedList<Person> arraylist = hashMap.get(key);
@@ -152,12 +152,8 @@ public class AddressBook implements AddressBookInterface {
 
 	public void sortByName() {
 		fileReade();
-		for (int select = 0; select < numberofaddressbook; select++) {
-			System.out.println(select + " " + addressbook[select]);
-		}
-		System.out.println(" Select Your Address Book");
-		int select = scanner.nextInt();
-		key = addressbook[select];
+		System.out.println("address book sre");
+		
 		if (hashMap.containsKey(key)) {
 			LinkedList<Person> arraylist = hashMap.get(key);
 			Collections.sort(arraylist, Person.sortEntriesName);
@@ -167,7 +163,6 @@ public class AddressBook implements AddressBookInterface {
 			}
 		}
 		fileWrite();
-		display();
 
 	}
 
@@ -179,6 +174,8 @@ public class AddressBook implements AddressBookInterface {
 		if (n == 1) {
 			System.out.println("Enter  Person FirstName");
 			String name = scanner.next();
+			
+			
 
 			for (int i = 0; i < linkedList.size(); i++) {
 				String nam = hashMap.get(key).get(i).getFirstName();
