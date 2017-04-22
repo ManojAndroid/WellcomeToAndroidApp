@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;generalProgram/src/org/bridgelab/Collection&apos; to &apos;Collectionset&apos;" description="Rename resource &apos;Collection&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/org/bridgelab/Collection" name="Collectionset" stamp="1492664226069" updateReferences="true"/>
-</session>
