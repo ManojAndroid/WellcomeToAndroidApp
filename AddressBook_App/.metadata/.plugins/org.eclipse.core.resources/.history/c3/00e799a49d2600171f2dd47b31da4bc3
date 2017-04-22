@@ -187,7 +187,7 @@ public class AddressBook implements AddressBookInterface {
 	public void display() {
 		fileReade();
 
-		System.out.println("Numbers Of Address Book  :");
+		System.out.println("AddressBookARE  :");
 		for (int select = 0; select < numberofaddressbook; select++) {
 			System.out.println(select + " " + addressbook[select]);
 		}
@@ -195,7 +195,7 @@ public class AddressBook implements AddressBookInterface {
 			System.out.println("no such address book");
 		}
 
-		System.out.println("Select Your Address Book");
+		System.out.println(" Select Your Address Book");
 		int select = scanner.nextInt();
 		key = addressbook[select];
 		System.out.println(
