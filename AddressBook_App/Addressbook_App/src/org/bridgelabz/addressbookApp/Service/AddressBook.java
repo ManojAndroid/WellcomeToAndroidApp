@@ -38,6 +38,7 @@ public class AddressBook implements AddressBookInterface {
 				createNewAddressBook();
 
 			} else {
+				return;
 			}
 
 		} else {
@@ -139,15 +140,9 @@ public class AddressBook implements AddressBookInterface {
 		int select = scanner.nextInt();
 		key = addressbook[select];
 		linkedList = hashMap.get(key);
+		Collections.sort(linkedList, Person.sortEntriesName);
+		fileWrite();
 
-		if (hashMap.containsKey(key)) {
-			LinkedList<Person> arraylist = hashMap.get(key);
-			Collections.sort(arraylist, Person.sortEntriesZip);
-
-			for (Person str : arraylist) {
-				System.out.println(str);
-			}
-		}
 	}
 
 	public void sortByName() {
@@ -158,15 +153,9 @@ public class AddressBook implements AddressBookInterface {
 		System.out.println(" Select Your Address Book");
 		int select = scanner.nextInt();
 		key = addressbook[select];
-		if (hashMap.containsKey(key)) {
-			LinkedList<Person> arraylist = hashMap.get(key);
-			Collections.sort(arraylist, Person.sortEntriesName);
-
-			for (Person str : arraylist) {
-				System.out.println(str);
-			}
-		}
-		fileWrite();
+		linkedList = hashMap.get(key);
+		Collections.sort(linkedList, Person.sortEntriesName);
+		// fileWrite();
 		display();
 
 	}
@@ -174,26 +163,34 @@ public class AddressBook implements AddressBookInterface {
 	public void deleteByFirstName() {
 		fileReade();
 		System.out.println("address book sre");
+		for (int select = 0; select < numberofaddressbook; select++) {
+			System.out.println(select + " " + addressbook[select]);
+		}
+		System.out.println(" Select Your Address Book");
+		int select = scanner.nextInt();
+		key = addressbook[select];
+		linkedList = hashMap.get(key);
 		System.out.println("Do you Want to Delete DatA \nYES Enter:1\nNOT Enter:2");
 		int n = scanner.nextInt();
 		if (n == 1) {
+
 			System.out.println("Enter  Person FirstName");
 			String name = scanner.next();
 
 			for (int i = 0; i < linkedList.size(); i++) {
 				String nam = hashMap.get(key).get(i).getFirstName();
-				System.out.println(nam);
+			
 				if (nam.equalsIgnoreCase(name)) {
 					linkedList.remove(hashMap.get(key).get(i));
-					display();
+					fileWrite();
 					System.out.println(name + "  Details Is Sucessfully Deleted");
-					return;
-				} else {
-					System.out.println("Not Data Found By This" + name);
 				}
+			/*else {
+					System.out.println(name + " name data is not present ");
+				}*/
 			}
-
 		}
+
 	}
 
 	public void display() {
@@ -210,6 +207,7 @@ public class AddressBook implements AddressBookInterface {
 		System.out.println("Select Your Address Book");
 		int select = scanner.nextInt();
 		key = addressbook[select];
+		linkedList = hashMap.get(key);
 		System.out.println(
 				"________________________________________________________________________________________________________________________");
 		System.out.println(
@@ -217,17 +215,22 @@ public class AddressBook implements AddressBookInterface {
 		System.out.println(
 				"________________________________________________________________________________________________________________________");
 
-		for (Entry<String, LinkedList<Person>> entry : hashMap.entrySet()) {
-			LinkedList<Person> value = entry.getValue();
-			for (Person s : value) {
-				System.out.println(s);
-				System.out.println(
-						"________________________________________________________________________________________________________________________");
-			}
+		for (int i = 0; i < linkedList.size(); i++) {
+			System.out.println(hashMap.get(key).get(i));
 		}
 	}
 
 	public void editDetails() {
+		fileReade();
+
+		System.out.println("Numbers Of Address Book  :");
+		for (int select = 0; select < numberofaddressbook; select++) {
+			System.out.println(select + " " + addressbook[select]);
+		}
+		System.out.println("Select Your Address Book");
+		int select = scanner.nextInt();
+		key = addressbook[select];
+		linkedList = hashMap.get(key);
 		System.out.println("Enter The Name Of Person Whose Details You Want To Edit!!!");
 		String name = scanner.next();
 
@@ -280,8 +283,8 @@ public class AddressBook implements AddressBookInterface {
 
 					}
 				} while (option != 8);
+				fileWrite();
 			}
-			display();
 
 		}
 
